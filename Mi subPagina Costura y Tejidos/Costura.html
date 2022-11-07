@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>Costura y Tejidos</title>
+	<!--<script src = "JavaScript.js"></script>*/-->
+	
+	
+	<style>
+		ul { 
+			display: flex;
+			justify-content:space-around;
+			list-style: none;
+			
+			
+		}
+		li	{
+			border-radius: 30px;
+			background-color: rgb(186, 139, 178);
+			padding: 30px;
+			border: solid;
+			/*width:fit-content;*/
+			height: 50px;
+			width: 100px;
+			text-align:center;
+			cursor: pointer;
+			font-size: 42px;
+            border-color:#2b0126;
+            border-width: 2px;
+            transition: border-color 2s; border-width: 5px 3s;
+			}
+		li:hover {
+					border-top-color: #CE0871;
+    				border-right-color: #CE0871;
+    				border-left-color: #13ee07;
+    				border-bottom-color: #13ee07;
+    				border-width:5px;
+				 }
+		li a:active{
+					color: #CE0871;
+					}
+		li a:hover{
+					color: #CE0871;
+					}
+		a {
+			outline: none; /*esta linea y la de abajo ocultan la rayita del enlace*/
+  			text-decoration: none; 
+		   }
+		.hover:hover{
+                    color: #CE0871;
+                    
+                    }
+		.container {
+					background-color: rgb(242, 177, 15);
+					background: url('img/Satin_golden.jpg');
+					background-size:auto;
+					border:none;
+					}
+		.container_m	{
+					display: grid;
+					background-color: rgb(255, 234, 150);
+					background: url('img/Silk.jpg');
+					background-size:cover;
+					grid-template-columns: 1fr 1fr;
+					grid-template-areas:
+					"Tejidos Crochet y de Punto" "Costura";
+					/*"div de Tejido Punto" "div de Bordado; */
+					}
+		.subitem_1	{
+				/*border: solid black 2px;*/
+				display: grid;
+				margin-left:30px;
+				grid-template-columns: 1fr 1fr;
+				grid-template-areas:
+					
+					"img" "Descr";
+				}
+		
+		
+		.item_tejidos {
+					   background: url('img/Satin.jpg');
+                       background-size:cover;
+					   grid-area: div de tejido de crochet;
+					   
+					   margin-right: 50px;
+					  /* cursor: pointer;*/
+					   /*border: solid black 2px;*/
+					   transition: transform .3s;
+					   box-shadow: 0px 5px 20px 0px rgb(204 204 204 / 50%);
+					  
+					  }
+		.Ovillo {
+			animation: volando ease-in-out infinite 4s;
+    
+		}
+		.item_costura {
+					   grid-area: div de Tejido de Punto;
+					   
+					   background: url('img/4TelasPrint.jpg');
+					   background-size:cover;
+					   /*height:"500";*/
+					   /*cursor: pointer;*/
+					  }
+		.img {
+			  /*cursor: pointer;*/
+			  /*border: solid black 2px;*/
+			  /*display: inline-block;*
+    		/*transform: translate(-50%, -50%);*/
+			
+			 }
+
+		h1 {
+			background-color: rgb(186, 139, 178);
+			border-radius: 30px;
+			padding: 8px;
+			width:fit-content;	
+			/*height:fit-content;*/		
+			font-family: 'Tangerine', serif;
+			font-size: 64px;
+			}
+		.DivHeader {
+					width:fit-content;
+					}
+		.item_tejidos h2, p {
+			/*display: inline-block;*/
+			background-color: rgb(103, 103, 238);
+			border-radius: 30px;
+			padding: 8px;
+			width:fit-content;	
+			/*height:fit-content;*/	
+			font-size:48px;	
+			}
+
+		.item_costura h2, p1 {
+			/*display: inline-block;*/
+			background-color: rgb(181, 101, 63);
+			border-radius: 30px;
+			padding: 8px;
+			width:fit-content;	
+			/*height:fit-content;*/		
+			}
+			
+		.chal {
+				background: url('img/Silk.jpg');
+                background-size:cover;
+				/*background-size:400px;*/
+				font-size:48px;
+				font-weight:bolder;
+				
+			   }
+		* {
+			font-family: 'Tangerine', serif;
+			}
+		.footer {
+				background-color: rgb(241, 158, 21);
+				background: url('img/Satin_golden.jpg');
+				background-size:cover;
+				}
+
+		@media only screen and (max-width: 1160px)
+			{
+			ul	{
+				display: flex;
+			}
+			li	{
+				/*border-radius: 20px;
+				background-color: rgb(186, 139, 178);
+				padding: 20px;
+				border: solid;
+				justify-content: center;
+				height: 10px;
+				text-align: center-left;*/
+				border-radius: 30px;
+				background-color: rgb(186, 139, 178);
+				padding: 30px;
+				border: solid;
+				/*width:fit-content;*/
+				height: 50px;
+				width: 100px;
+				text-align:center;
+				cursor: pointer;
+			}
+			.container_m	{
+							display: grid;
+					
+							grid-template-columns: 1fr 1fr;
+							grid-template-areas:
+							"Tejidos Crochet y de Punto" "Costura";
+							/*"div de tejido de crochet" 
+							"div de Tejido de Punto"
+							"div de Costura" 
+							"div de Bordado";*/
+							}
+			.subitem_1 {
+						display: grid;
+						grid-template-columns: 1fr;
+						grid-template-areas:
+						"img" 
+						"Descr";
+						
+						}
+			
+			}
+		@media only screen and (max-width: 800px)
+			{
+			ul { 
+				display: flex;
+				justify-items:legacy;
+				list-style: none;
+				flex-wrap: wrap;
+				/*flex-direction: column;*/
+				align-content: space-between;
+			}
+			li	{
+				border-radius: 30px;
+				background-color: rgb(186, 139, 178);
+				padding: 30px;
+				border: solid;
+				/*width:fit-content;*/
+				height: 50px;
+				width: 100px;
+				text-align:center;
+				cursor: pointer;
+				flex-wrap: wrap;
+				flex-direction: column;
+				align-content: space-between;
+				}
+            li .Elaboracion {
+                          text-align:left!important;
+                         }
+			.container_m	{
+							display: grid;
+					
+							grid-template-columns: 1fr;
+							grid-template-areas:
+							"div de tejido de crochet" 
+							"div de Tejido de Punto"
+							"div de Costurat" 
+							"div de Bordado";
+							}
+			.subitem_1 {
+						display: grid;
+						grid-template-columns: 1fr;
+						grid-template-areas:
+						"img"
+						"Descr";
+						}
+			
+			}
+		
+	</style>
+</head>
+<body class="chal">
+
+<header>
+    <div class="DivHeader">
+    	<h1>Cosiendo Destinos</h1>
+	</div>
+    <div class= "container">
+        <!--<h1></h1>-->
+        <ul>
+			<li class="hover"><a href="Index.html" class="Link">Home</a></li>
+			<!--<li class="Elaboracion"> Elaboración </li>-->
+			<li class="hover"><a href="Tejidos.html" class="Link" target="_blank">Tejidos</a> </li>
+			<li class="hover"><a href="ContactForm.html" class="Link" target="_blank">Contacto</a></li>
+		</ul>
+    </div>
+    <div style="background:url('img/Puntilla.jpg')" height="300"> <h2 style="color:white">Bienvenidos a mi página de mis trabajos artesanales</h2></div>
+</header>
+
+<main>
+
+<div class="container_m">
+	<div class= "item_tejidos"><h1> Tips de Costura </h1>
+		<!--<img src="img/Ovillos.png" title="wool icons">- --->
+		<!--<img class = "Ovillo" src ="img/OvilloAzul.png">-->
+		
+		
+		<div class = "subitem_1" >
+			<div> <h2>Blusa sin costura visible</h2>
+                <iframe height="300" src="https://www.youtube.com/embed/K78gMEhMxWA" title="The lesson of sewing the neck and shoulders is very, very important. Sewing techniques" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div>
+			<div class ="Descr"><h2>Descripción</h2>
+				<p>Para vestidos y blusas de alta costura.</p>
+			</div>
+
+		</div>
+        
+		<div class = "subitem_1" >
+			
+            <div> <h2>Tipos de costura</h2>
+                <iframe height="300" src="https://www.youtube.com/embed/gSqJwH7Jsvs" title="⭐️ 12 amazing sewing tips and tricks for beginners | Sewing techniques no overlock machine no serger" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div>
+			<div class ="Descr"><h2>Descripción</h2>
+				<p>Para todo tipo de prendas.</p>
+			</div>
+			
+		</div>
+		
+	</div>
+
+		
+	<div class = "item_costura"> <h1>Trabajos Realizados</h1>
+		<div class ="subitem_1">
+			<div class ="img"><h2> Pantalon jogging</h2>
+				<a href ="img/Jogging.jpg"> <img src="img/Jogging.jpg" width = "200"></a>
+			</div>
+			<div class="Descr"> <h2>Descripción</h2>
+				<p1>Jogging de doble frizza con bolsillos.</p1>
+			</div>
+			<div class ="img"><h2>Juego de Toallones</h2>
+				<a href ="img/Conjunto_Toallones.JPG"> <img src="img/Conjunto_Toallones.JPG" width = "400"></a>
+			</div>
+			<div class="Descr"> <h2>Descripción</h2>
+				<p1>Conjunto de Toallones grandes, toallas y toallas de mano con borde de bies y puntilla decorativa.</p1>
+			</div>
+				
+            
+                
+			</div>
+
+		</div>
+		
+	</div>
+
+</div>
+
+
+</main>
+
+<footer>
+	<div class="footer">
+			<h1>Servicios de Costura y Tejidos</h1>
+            <h3>Marcela Patricia Telleria </h3>
+            <h3>Curso Codo a Codo 4.0</h3>
+	</div>
+</footer>
+
+</body>
+</html>

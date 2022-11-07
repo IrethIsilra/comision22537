@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>Contacto</title>
+
+    <style>
+		ul { 
+			display: flex;
+			justify-content:space-around;
+			list-style: none;
+			
+			
+		}
+		li	{
+			border-radius: 30px;
+			background-color: rgb(186, 139, 178);
+			padding: 30px;
+            /*border-color:#CE0871;*/
+			border: solid;
+			/*width:fit-content;*/
+			height: 50px;
+			width: 100px;
+			text-align:center;
+			cursor: pointer;
+            font-size: 42px;
+            border-color:#2b0126;
+            border-width: 2px;
+            transition: border-color 2s; border-width: 5px 3s;
+			}
+       
+li:hover {
+    border-top-color: #CE0871;
+    border-right-color: #CE0871;
+    border-left-color: #13ee07;
+    border-bottom-color: #13ee07;
+    border-width:5px;
+    /*transition: border-color 3s ease-out 3s, width 0.5s ease-out 1s height 0.25s ease-in 0.75s;*/
+    /*transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    transition-property: width, height;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease-out, ease-out;
+    transition-delay: 0s, 0.25s;*/
+    /*color: #fcfcfc;
+    border:0;
+            border-top-color:aqua;
+    border-top-style: initial;
+    border-top-width: 0px;
+    border-right-color: initial;
+    border-right-style: initial;
+    border-right-width: 0px;
+    border-bottom-color: initial;
+    border-bottom-style: initial;
+    border-bottom-width: 0px;
+    border-left-color: initial;
+    border-left-style: initial;
+    border-left-width: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;*/
+}
+		 a:active{          /*no hacia falta que sea li a */
+					color: #CE0871;
+					}
+		 a:hover{
+					color: #CE0871;
+                  
+					}
+       /* .hover:hover{
+                    color: #CE0871;
+                    
+                    }*/
+        /*a .hover {
+                    transition:color 025s;
+                    transition-property: color;
+                    transition-duration: 025s;
+                    transition-timing-function: ease;
+                    transition-delay: 0s;
+                }*/
+		a {
+			outline: none; /*esta linea y la de abajo ocultan la rayita del enlace*/
+  			text-decoration: none; 
+
+		   }
+
+        h1 {
+			background-color: rgb(186, 139, 178);
+			border-radius: 30px;
+			padding: 8px;
+			width:fit-content;	
+			/*height:fit-content;*/		
+			font-family: 'Tangerine', serif;
+			font-size: 64px;
+           
+			}
+        .container {
+                     background: url('img/Satin_golden.jpg');
+                    }
+
+       
+		.DivHeader {
+                    
+					width:fit-content;
+					}
+        .body {
+                background: url('img/Silk.jpg');
+				background-size:cover;
+              }
+        h1, li {
+			font-family: 'Tangerine', serif;
+			}
+        .form {
+                font-size:32px;
+                font-weight: bolder;
+                font-optical-sizing:48;
+              }
+
+        .Bit {
+                    /*background-color:purple;*/
+                    background: url('img/Bit1.jpg');
+                    background-size:cover;
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 32px;
+                  }
+        .bitcoin {
+                    background-color:rgb(251, 205, 2);
+                    width:fit-content;
+                    padding: 1px;
+                    border-radius: 30px;
+                    margin:10px;
+                  }
+        
+        .footer {
+				background-color: rgb(241, 158, 21);
+                background: url('img/Satin_golden.jpg');
+				background-size:cover;
+				}
+
+
+    </style>
+
+
+</head>
+<body class="body">
+    <header>
+        <div class="DivHeader">
+            <h1 class="h1"> Servicios de Costura y Tejidos</h1>
+        </div>
+        <div class= "container">
+            <!--<h1></h1>-->
+            <ul>
+                <li class="hover"><a href="Index.html" class="Link">Home</a></li>
+                <li class="hover"> Tejidos </li>
+                <li class="hover"><a href="Costura.html" class="hover">Costura</a></li>
+                <li class="hover"><a href="ContactForm.html" class="hover" target="_blank">Contacto</a></li>
+           <!--la a tenia class="Link"-->
+            </ul>
+        </div>
+        <div style="background:url('img/Puntilla.jpg')" height="300"> <h2 style="color:white">Bienvenidos a mi página de mis trabajos artesanales</h2></div>
+    </header>
+
+
+    <form action="https://formspree.io/f/xpznwwok" method="POST" class="form">
+        <Label>Nombre y Apellido 
+            <input type="text" name="nombre"></Label> <br> <br>  <!-- sale de costado-->         
+        <!--<Label>E-mail </Label><br><br> sale abajo
+        <input type="email" name="email"> <br>-->
+        <Label>E-mail
+            <input type="email" nombre="email">
+        </Label><br><br>
+        <label>Comentario</label><br>
+        <textarea name="message"></textarea><br><br>
+        <Label>Elegir Area </Label> <Br><br>
+        <label>Tejidos</label>
+        <input type="radio" id="1">
+        <Label>Costura</Label>
+        <input type="radio" id="1">
+        <br><br><br>
+            
+        <button type="submit" >Enviar</button>
+
+    </form>
+    <div><br>
+
+    </div>
+    <div id="app" class="Bit">
+        <h1>Listado de Precio de Bitcoin</h1>
+        <P>Actualizado: {{time}}</P>
+        
+        <section v-if="errored">
+          <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde</p>
+        </section>
+      
+        <section v-else>
+          <div v-if="loading">Cargando...</div>
+      
+          <div v-else v-for="currency in info" class="bitcoin">
+            {{ currency.description }}:
+              <span v-html="currency.symbol"></span>{{ currency.rate_float | currencydecimal }}
+          </div>
+      
+        </section>
+      </div>
+      <script src="api.js"></script> 
+      
+    <br>
+    <footer>
+        <div class="footer">
+            <h1>Servicios de Costura y Tejidos</h1>
+            <h3>Marcela Patricia Telleria </h3>
+            <h3>Curso Codo a Codo 4.0</h3>
+            
+        </div>
+    </footer>
+
+</body>
+</html>
